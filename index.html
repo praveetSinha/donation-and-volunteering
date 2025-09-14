@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conservatives</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans">
+    <!-- Navbar -->
+    <header class="bg-white border-b-2 border-blue-200">
+      <div
+        class="max-w-6xl mx-auto px-4 flex justify-between items-center py-3"
+      >
+        <div class="flex items-center gap-2">
+          <img src="logo.svg" alt="Conservatives Logo" class="h-8" />
+        </div>
+        <nav>
+          <ul class="flex space-x-6 text-black font-medium">
+            <li><a href="#" class="hover:text-blue-600">Home</a></li>
+            <li><a href="#" class="hover:text-blue-600">About</a></li>
+            <li><a href="#" class="hover:text-blue-600">Policies</a></li>
+            <li><a href="#" class="hover:text-blue-600">News & Updates</a></li>
+            <li>
+              <a href="#" class="hover:text-blue-600">Support & Donate</a>
+            </li>
+            <li><a href="#" class="hover:text-blue-600">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mx-auto">
+      <section
+        class="w-full bg-gradient-to-b from-blue-200 to-blue-900 text-white"
+      >
+        <div
+          class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10"
+        >
+          <!-- Left Content -->
+          <div class="md:w-1/2 py-">
+            <h1 class="font-bold text-4xl mb-4 leading-tight">
+              Help Fuel the Campaign <br class="hidden md:inline-block" />
+              for a Stronger Britain
+            </h1>
+            <p class="font-bold text-xl md:text-3xl mb-8 leading-relaxed">
+              Your support makes real <br class="hidden md:inline-block" />
+              change possible.
+            </p>
+
+            <a
+              href="#"
+              class="inline-block bg-sky-400 hover:bg-sky-600 text-white font-bold px-6 py-3 rounded-lg transition"
+            >
+              Take Action
+            </a>
+          </div>
+
+          <!-- Right Image -->
+          <div class="md:w-1/2 flex justify-center">
+            <img
+              src="hero-people.png"
+              alt="Campaign Leaders"
+              class="max-w-xs md:max-w-sm rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="bg-white py-16 px-6">
+      <h2 class="text-5xl font-bold text-center text-blue-900 mb-10">
+        Donate, volunteer, and help build <br />
+        a stronger future
+      </h2>
+
+      <div
+        class="max-w-5xl mx-auto mt-20 grid md:grid-cols-2 bg-white rounded-2xl shadow-lg overflow-hidden"
+      >
+        <div
+          class="relative flex-1 bg-gradient-to-b from-blue-700 to-blue-900 text-white flex items-center justify-center min-h-[500px]"
+        >
+          <img
+            src="Podium.png"
+            alt="Person at podium"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0"></div>
+
+          <div class="absolute inset-0 flex items-center p-8"></div>
+        </div>
+
+        <div class="bg-blue-900 text-white p-8">
+          <h3 class="text-4xl font-semibold mb-6">
+            Where would you <br />
+            like to give
+          </h3>
+
+          <div class="flex flex-wrap gap-3 mb-6">
+            <button
+              class="bg-white text-blue-900 font-bold py-2 px-4 rounded-full hover:bg-gray-200"
+            >
+              £5
+            </button>
+            <button
+              class="bg-white text-blue-900 font-bold py-2 px-4 rounded-full hover:bg-gray-200"
+            >
+              £10
+            </button>
+            <button
+              class="bg-white text-blue-900 font-bold py-2 px-4 rounded-full hover:bg-gray-200"
+            >
+              £25
+            </button>
+            <button
+              class="bg-white text-blue-900 font-bold py-2 px-4 rounded-full hover:bg-gray-200"
+            >
+              £50
+            </button>
+            <button
+              class="bg-white text-blue-900 font-bold py-2 px-4 rounded-full hover:bg-gray-600"
+            >
+              Custom
+            </button>
+          </div>
+
+          <form action="#" method="POST" class="space-y-4">
+            <input
+              type="text"
+              placeholder="£"
+              class="w-full px-4 py-3 rounded-lg text-gray-900"
+            />
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="w-full px-4 py-3 rounded-lg text-gray-900"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full px-4 py-3 rounded-lg text-gray-900"
+            />
+
+            <div class="flex items-center space-x-4">
+              <label class="flex items-center space-x-2">
+                <input
+                  type="radio"
+                  name="payment"
+                  value="stripe"
+                  class="text-blue-600"
+                  checked
+                />
+                <span class="font-bold">Stripe</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input
+                  type="radio"
+                  name="payment"
+                  value="paypal"
+                  class="text-blue-600"
+                />
+                <span class="font-bold">(credit/debit Card) PayPal</span>
+              </label>
+            </div>
+
+            <button
+              type="submit"
+              class="inline-block px-3 bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 rounded-lg"
+            >
+              Donate Securely
+            </button>
+
+            <p class="text-xs text-gray-300">
+              🔒 100% secure payment processing via Stripe & PayPal
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Top Heading -->
+    <div class="text-center py-16">
+      <h2 class="text-5xl text-sky-600 mb-10">
+        Not able to donate? Your time can <br />
+        make a big impact too.
+      </h2>
+      <button
+        class="text-2xl px-8 py-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg shadow"
+      >
+        Volunteer With Us ↓
+      </button>
+    </div>
+
+    <!-- Volunteer Form Section -->
+    <div
+      class="w-[1236px] h-[760px] max-w-5xl mx-auto grid md:grid-cols-2 bg-blue-900 text-white rounded-lg overflow-hidden shadow-lg"
+    >
+      <div class="relative">
+        <img
+          src="Volunteers.png"
+          alt="volunteers"
+          class="w-full h-auto object-cover"
+        />
+      </div>
+
+      <div class="p-6 md:p-8 flex flex-col justify-center">
+        <h3 class="text-4xl font-bold mb-4">
+          Join the Team <br />
+          Make a Real Difference.
+        </h3>
+        <form class="space-y-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="px-3 py-2 rounded-md w-full text-gray-800"
+            />
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="px-3 py-2 rounded-md w-full text-gray-800"
+            />
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <input
+              type="text"
+              placeholder="Phone Number"
+              class="px-3 py-2 rounded-md w-full text-gray-800"
+            />
+            <input
+              type="text"
+              placeholder="Postcode / Area"
+              class="px-3 py-2 rounded-md w-full text-gray-800"
+            />
+          </div>
+          <textarea
+            placeholder="How would you like to help?"
+            class="px-3 py-2 rounded-md w-full text-gray-800"
+          ></textarea>
+
+          <label class="flex items-center text-sm">
+            <input type="checkbox" class="mr-2" />
+            I consent to be contacted by the campaign regarding volunteer
+            activities.
+          </label>
+
+          <button
+            class="mt-3 px-6 py-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg shadow"
+          >
+            Sign Up to Volunteer
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Campaign Banner -->
+    <div
+      class="max-w-5xl mx-auto mt-20 mb-20 rounded-2xl overflow-hidden relative"
+    >
+      <img
+        src="join.png"
+        alt="campaign group"
+        class="w-full h-56 md:h-72 object-cover"
+      />
+      <div class="absolute inset-0 flex flex-col items-center">
+        <button
+          class="px-5 py-7 mt-40 text-3xl bg-white text-blue-900 font-bold rounded-2xl shadow"
+        >
+          Join the Campaign
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="max-w-[1440px] mx-auto max-h-[571px] bg-blue-900 text-white">
+      <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-10">
+        <!-- Logo & About -->
+        <div>
+          <div class="-mt-8 -mb-8 -mr-8">
+            <img src="logo.svg" alt="Logo" class="h-40 w-40" />
+          </div>
+          <h3 class="font-bold">Prashanth Kumar</h3>
+          <p class="mt-2 text-sm leading-relaxed">
+            Standing for You. <br />
+            Fighting for What Matters." <br />
+            Member of the Conservative Party
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h2 class="text-2xl font-bold mb-4">Quick Links</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-sky-400">Home</a></li>
+            <li><a href="#" class="hover:text-sky-400">About Prashanth</a></li>
+            <li><a href="#" class="hover:text-sky-400">Priorities</a></li>
+            <li><a href="#" class="hover:text-sky-400">News & Updates</a></li>
+            <li><a href="#" class="hover:text-sky-400">Events</a></li>
+            <li><a href="#" class="hover:text-sky-400">Donate</a></li>
+            <li><a href="#" class="hover:text-sky-400">Volunteer</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="font-bold mb-4 text-2xl">Contact us</h3>
+          <ul class="space-y-2 text-sm">
+            <li class="flex items-start space-x-2">
+              <span class="text-sky-400">📍</span>
+              <span
+                >EL, 9A Apsley Close, North Harrow, Harrow, United Kingdom, HA2
+                6DP</span
+              >
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-sky-400">📞</span>
+              <a href="tel:+447435773972" class="hover:text-sky-400"
+                >+44 7435773972</a
+              >
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-sky-400">✉️</span>
+              <a
+                href="mailto:care@theproeducator.com"
+                class="hover:text-sky-400"
+                >care@theproeducator.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Socials -->
+        <div>
+          <h3 class="font-bold mb-4 text-2xl">Our Newsletter</h3>
+          <div class="flex flex-col items-start space-y-3">
+            <input
+              type="email"
+              placeholder="Your email"
+              class="px-3 py-2 rounded-full text-gray-800 w-full"
+            />
+            <button
+              class="bg-[#A7C8E0] text-[#133E77] font-bold py-3 rounded-2xl inline-block px-6 text-xl"
+            >
+              Subscribe
+            </button>
+          </div>
+
+          <h3 class="font-bold mt-6 mb-3 text-2xl">Platform</h3>
+          <div class="flex space-x-4 text-xl">
+            <a href="#" class="hover:text-sky-400">🌐</a>
+            <a href="#" class="hover:text-sky-400">📘</a>
+            <a href="#" class="hover:text-sky-400">📸</a>
+            <a href="#" class="hover:text-sky-400">💬</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="font-bold bg-blue-800 text-center py-4 text-sm text-2xl">
+        © 2025 Prashant Kumar | All rights reserved
+      </div>
+    </footer>
+  </body>
+</html>
